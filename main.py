@@ -31,7 +31,7 @@ async def checkforvideos():
     channel = f"https://www.youtube.com/channel/{youtube_channel}"
 
     #getting html of the /videos page
-    html = requests.get(channel+"/vidoes").text
+    html = requests.get(channel+"/videos").text
 
     #getting the latest video's url
     #put this line in try and except block cause it can give error some time if no video is uploaded on the channel
